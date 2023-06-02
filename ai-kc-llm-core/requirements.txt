@@ -1,0 +1,13 @@
+pymongo
+langchain
+pinecone-client
+slack_sdk
+requests
+numpy
+fake_useragent
+beautifulsoup4
+lxml
+tiktoken
+google-api-python-client
+google-auth-httplib2
+google-auth-oauthlib

@@ -1,0 +1,25 @@
+{
+  "name": "feed-slack",
+  "version": "1.0.0",
+  "description": "feed slack",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-lambda": "^3.344.0",
+    "aws-sdk": "^2.1389.0",
+    "axios": "^1.4.0",
+    "lodash": "^4.17.21",
+    "querystring": "^0.2.1"
+  },
+  "devDependencies": {
+    "@types/aws-sdk": "^2.7.0",
+    "@types/lodash": "^4.14.195",
+    "@types/node": "^20.2.5",
+    "esbuild": "^0.17.19",
+    "typescript": "^5.1.3"
+  }
+}
