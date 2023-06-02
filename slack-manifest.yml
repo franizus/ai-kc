@@ -1,0 +1,39 @@
+display_information:
+  name: Knowledge Center
+  description:
+    Hola, soy tu asistente para encontrar información de Kushki, hazme
+    una pregunta
+  background_color: "#064e68"
+  long_description: Este sistema te permitirá realizar consultas acerca de
+    productos internos o externos de Kushki y te traerá información encontrada
+    en las distintas fuentes de información que tiene la empresa disponible para
+    todos los trabajadores.
+features:
+  bot_user:
+    display_name: Knowledge Center
+    always_online: true
+oauth_config:
+  scopes:
+    user:
+      - chat:write
+    bot:
+      - app_mentions:read
+      - chat:write
+      - im:history
+      - im:write
+      - mpim:write
+      - commands
+      - incoming-webhook
+      - users:write
+settings:
+  event_subscriptions:
+    request_url: https://9fj0lb3vv5.execute-api.us-east-1.amazonaws.com/qa/slack
+    bot_events:
+      - app_mention
+      - message.im
+  interactivity:
+    is_enabled: true
+    request_url: https://9fj0lb3vv5.execute-api.us-east-1.amazonaws.com/qa/feed
+  org_deploy_enabled: false
+  socket_mode_enabled: false
+  token_rotation_enabled: false
